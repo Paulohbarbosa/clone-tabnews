@@ -1,11 +1,9 @@
-test('Adiciona 1+1', () => {
-    expect(1 + 1).toBe(2);
+const calculadora = require('../models/calculadora');
+
+test('soma 1+1 que deveria ser 2', () => {
+    expect(calculadora.soma(1, 1)).toBe(2);
 });
 
-test('subtrair 1-1', () => {
-    expect(1 - 1).toBe(0);
+test('soma palvara + 1 deveria ser erro', () => {
+    expect(calculadora.soma('palavra', 1)).toBe('Erro');
 })
-// função que erra
-test('subtrair 1-1 que deveria ser 0', () => {
-    expect(1 - 1).toBe(1);
-});
