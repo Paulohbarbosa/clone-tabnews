@@ -4,6 +4,6 @@ test('soma 1+1 que deveria ser 2', () => {
     expect(calculadora.soma(1, 1)).toBe(2);
 });
 
-test('soma palvara + 1 deveria ser erro', () => {
+test('soma palavra + 1 deveria ser erro', () => {
     expect(calculadora.soma('palavra', 1)).toBe('Erro');
 })
